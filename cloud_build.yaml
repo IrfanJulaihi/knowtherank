@@ -3,7 +3,7 @@ steps:
 #Create .env file from Google Cloud Build substitution variables
 - name: node
   entrypoint: npm
-  # args: ["run", "create-env"]
+  args: ["run", "create-env"]
   # env:
   #   - 'VUE_APP_APP_NAME=${_VUE_APP_APP_NAME}'
   #   - 'VUE_APP_BASE_API_URL=${_VUE_APP_BASE_API_URL}'
