@@ -1,6 +1,6 @@
 # app.yaml
 runtime: custom
-env: flex
+env: standard
 # If you have one application, please use "default" for service
 service: knowtherank
 # VPC Network if you have one
