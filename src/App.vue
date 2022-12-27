@@ -6,41 +6,41 @@ import quizPage from './components/quizPage.vue'
 
 const questionPic = ref([
   {
-    title: 'Fil Marsyal', img: './assets/Fil_Marsyal_Darat.png',
+    title: 'Fil Marsyal', img: '../public/Fil_Marsyal_Darat.png',
   },
   {
-    title: 'Jeneral', img: './assets/Jeneral_Darat.png',
+    title: 'Jeneral', img: '../public/Jeneral_Darat.png',
   },
   {
-    title: 'Leftenan Jeneral', img: './assets/Leftenan_Jeneral_Darat.png',
+    title: 'Leftenan Jeneral', img: '../public/Leftenan_Jeneral_Darat.png',
   },
   {
-    title: 'Mejar Jeneral', img: './assets/Mejar_Jeneral_Darat.png',
+    title: 'Mejar Jeneral', img: '../public/Mejar_Jeneral_Darat.png',
   },
   {
-    title: 'Brigadier Jeneral', img: './assets/Brigadier_Jeneral_Darat.png',
+    title: 'Brigadier Jeneral', img: '../public/Brigadier_Jeneral_Darat.png',
   },
   {
-    title: 'Kolonel', img: './assets/Kolonel_Darat.png',
+    title: 'Kolonel', img: '../public/Kolonel_Darat.png',
   },
   {
-    title: 'Leftenan Kolonel', img: './assets/Leftenan_Kolonel_Darat.png',
+    title: 'Leftenan Kolonel', img: '../public/Leftenan_Kolonel_Darat.png',
   },
   {
-    title: 'Mejar', img: './assets/Mejar_Darat.png',
+    title: 'Mejar', img: '../public/Mejar_Darat.png',
   },
   {
-    title: 'Kapten', img: './assets/Kapten_Darat.png',
+    title: 'Kapten', img: '../public/Kapten_Darat.png',
   },
   {
-    title: 'Leftenan', img: './assets/Leftenan_Darat.png',
+    title: 'Leftenan', img: '../public/Leftenan_Darat.png',
   },
   {
-    title: 'Leftenan Muda', img: './assets/Leftenan_Muda_Darat.png',
+    title: 'Leftenan Muda', img: '../public/Leftenan_Muda_Darat.png',
   },
 
   {
-    title: 'Mejar', img: './assets/Mejar_Darat.png',
+    title: 'Mejar', img: '../public/Mejar_Darat.png',
   },
 ]);
 
