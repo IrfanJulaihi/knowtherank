@@ -3,8 +3,8 @@
 
     <!-- success modal -->
 
-    
-        <div v-if="answer=='correct'" class="flex justify-center items-center w-full   bg-gray-600 bg-opacity-50   ">
+
+    <div v-if="answer == 'correct'" class="flex justify-center items-center w-full   bg-gray-600 bg-opacity-50   ">
         <div class="shadow-lg  rounded-md bg-white">
             <div class="mt-8 text-center">
                 <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
@@ -29,19 +29,20 @@
         </div>
     </div>
 
-    <div v-else-if="answer=='wrong'" class="flex justify-center items-center w-full   bg-gray-600 bg-opacity-50   ">
+    <div v-else-if="answer == 'wrong'" class="flex justify-center items-center w-full   bg-gray-600 bg-opacity-50   ">
         <div class="shadow-lg  rounded-md bg-white">
             <div class="mt-8 text-center">
                 <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                    <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlnx="http://www.w.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                        </path>
+                    <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                            fill="red"></path>
                     </svg>
                 </div>
-                <h3 class="text-lg leading-6 font-medium text-gray-900">Correct</h3>
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Incorrect</h3>
                 <div class="mt-2 px-7 py-3">
-                    <p class="text-sm text-gray-500">Wrong try again.</p>
+                    <p class="text-sm text-gray-500">Please try again.</p>
                 </div>
                 <div class="items-center px-4 py-3">
                     <button @click="answer = !answer" class="px-4 py-2 bg-red-500 text-white
@@ -103,14 +104,14 @@ function shuffle(array) {
 function checkAnswer(val) {
 
     if (val == props.title) {
-        answer.value='correct'
-        setTimeout(()=>{
+        answer.value = 'correct'
+        setTimeout(() => {
             window.location.reload()
-        },1000)
-     
+        }, 1000)
+
 
     } else {
-     answer.value='wrong'
+        answer.value = 'wrong'
 
     }
 }
